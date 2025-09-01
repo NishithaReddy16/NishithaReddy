@@ -15,7 +15,7 @@ char pop()
 {
 	if (top >= 0)
 	{
-		return stack[top-1];
+		return stack[top--];
 	}
 	return -1;
 }
@@ -86,3 +86,4 @@ int main()
 	printf("postfix expression: %s\n",postfix);
 	return 0;
 }
+
